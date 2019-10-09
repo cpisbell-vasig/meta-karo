@@ -21,7 +21,8 @@ do_install_append () {
     for i in ${bindir_progs}; do rm -v ${D}${bindir}/$i; done
 
     echo "removing files from ${bindir}"
-    for i in df mktemp base32 base64 lbracket; do rm -v ${D}${bindir}/$i.${BPN}; done
+    for i in df mktemp base64 lbracket; do rm -v ${D}${bindir}/$i.${BPN}; done
+    for i in base32; do rm -v ${D}${bindir}/$i; done
 
     echo "removing files from ${sbindir}"
     for i in ${sbindir_progs};do rm -v ${D}${sbindir}/$i.${BPN}; done

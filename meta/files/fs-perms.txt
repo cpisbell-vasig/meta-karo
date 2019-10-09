@@ -64,7 +64,3 @@ ${ROOT_HOME}		0700	root	root	false - - -
 # Set 2775-lsb
 ${localstatedir}/mail	02775	root	mail	false - - -
 
-/run/dbus		0755	messagebus messagebus false - - -
-/run/utmp		0664	root	utmp	false - - -
-/run/wpa_supplicant	0700	root	root	false - - -
-/var/log/wtmp		0664	root	utmp	false - - -
